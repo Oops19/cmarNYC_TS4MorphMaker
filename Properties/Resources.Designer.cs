@@ -19,7 +19,7 @@ namespace MorphTool.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -471,6 +471,46 @@ namespace MorphTool.Properties {
         }
         
         /// <summary>
+         ///   Looks up a localized resource of type System.Byte[].
+         /// </summary>
+         internal static byte[] iuHead_lod0 {
+             get {
+                 object obj = ResourceManager.GetObject("iuHead_lod0", resourceCulture);
+                 return ((byte[])(obj));
+             }
+         }
+         
+         /// <summary>
+         ///   Looks up a localized resource of type System.Byte[].
+         /// </summary>
+         internal static byte[] iuHead_lod1 {
+             get {
+                 object obj = ResourceManager.GetObject("iuHead_lod1", resourceCulture);
+                 return ((byte[])(obj));
+             }
+         }
+         
+         /// <summary>
+         ///   Looks up a localized resource of type System.Byte[].
+         /// </summary>
+         internal static byte[] iuHead_lod2 {
+             get {
+                 object obj = ResourceManager.GetObject("iuHead_lod2", resourceCulture);
+                 return ((byte[])(obj));
+             }
+         }
+         
+         /// <summary>
+         ///   Looks up a localized resource of type System.Byte[].
+         /// </summary>
+         internal static byte[] iuHead_lod3 {
+             get {
+                 object obj = ResourceManager.GetObject("iuHead_lod3", resourceCulture);
+                 return ((byte[])(obj));
+             }
+         }
+         
+         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap MaleSkinTan {
@@ -551,6 +591,16 @@ namespace MorphTool.Properties {
         }
         
         /// <summary>
+         ///   Looks up a localized resource of type System.Drawing.Bitmap.
+         /// </summary>
+         internal static System.Drawing.Bitmap WerewolfSkin {
+             get {
+                 object obj = ResourceManager.GetObject("WerewolfSkin", resourceCulture);
+                 return ((System.Drawing.Bitmap)(obj));
+             }
+         }
+         
+         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] yf_to_male_normals {
@@ -640,9 +690,71 @@ namespace MorphTool.Properties {
             }
         }
         
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+       internal static byte[] yfWerewolf_Normals {
+           get {
+               object obj = ResourceManager.GetObject("yfWerewolf_Normals", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] yfWerewolf_Shape {
+           get {
+               object obj = ResourceManager.GetObject("yfWerewolf_Shape", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] yfwHead_lod0 {
+           get {
+               object obj = ResourceManager.GetObject("yfwHead_lod0", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] yfwHead_lod1 {
+           get {
+               object obj = ResourceManager.GetObject("yfwHead_lod1", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] yfwHead_lod2 {
+           get {
+               object obj = ResourceManager.GetObject("yfwHead_lod2", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] yfwHead_lod3 {
+           get {
+               object obj = ResourceManager.GetObject("yfwHead_lod3", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+
         internal static byte[] ym_to_female_normals {
             get {
                 object obj = ResourceManager.GetObject("ym_to_female_normals", resourceCulture);
@@ -729,5 +841,65 @@ namespace MorphTool.Properties {
                 return ((byte[])(obj));
             }
         }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymWerewolf_Normals {
+           get {
+               object obj = ResourceManager.GetObject("ymWerewolf_Normals", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymWerewolf_Shape {
+           get {
+               object obj = ResourceManager.GetObject("ymWerewolf_Shape", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymwHead_lod0 {
+           get {
+               object obj = ResourceManager.GetObject("ymwHead_lod0", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymwHead_lod1 {
+           get {
+               object obj = ResourceManager.GetObject("ymwHead_lod1", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymwHead_lod2 {
+           get {
+               object obj = ResourceManager.GetObject("ymwHead_lod2", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
+       
+       /// <summary>
+       ///   Looks up a localized resource of type System.Byte[].
+       /// </summary>
+       internal static byte[] ymwHead_lod3 {
+           get {
+               object obj = ResourceManager.GetObject("ymwHead_lod3", resourceCulture);
+               return ((byte[])(obj));
+           }
+       }
     }
 }

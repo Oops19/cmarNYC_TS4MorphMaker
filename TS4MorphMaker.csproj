@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -24,9 +24,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
+    <ErrorReportUrl>https://github.com/Oops19/cmarNYC_TS4MorphMaker/issues</ErrorReportUrl>
+    <ProductName>TS4MorphMaker</ProductName>
+    <PublisherName>o19</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>4.5.2.0</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>4.5.2.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -39,15 +44,17 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
@@ -78,34 +85,145 @@
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
     <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DDSPanel">
-      <HintPath>F:\s4pi Library\DDSPanel.dll</HintPath>
+      <HintPath>..\s4pi\DDSPanel.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="s4pi.AnimationResources">
+      <HintPath>..\s4pi\s4pi.AnimationResources.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.CASPartResource">
+      <HintPath>..\s4pi\s4pi.CASPartResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.CatalogResource">
+      <HintPath>..\s4pi\s4pi.CatalogResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Commons">
+      <HintPath>..\s4pi\s4pi.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.ComplateResource">
+      <HintPath>..\s4pi\s4pi.ComplateResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Controls">
+      <HintPath>..\s4pi\s4pi.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.CustomForms">
+      <HintPath>..\s4pi\s4pi.CustomForms.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.DataResource">
+      <HintPath>..\s4pi\s4pi.DataResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.DefaultResource">
+      <HintPath>..\s4pi\s4pi.DefaultResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.DWorldResource">
+      <HintPath>..\s4pi\s4pi.DWorldResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Extensions">
+      <HintPath>..\s4pi\s4pi.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Filetable">
+      <HintPath>..\s4pi\s4pi.Filetable.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.GenericRCOLResource">
+      <HintPath>..\s4pi\s4pi.GenericRCOLResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Helpers">
+      <HintPath>..\s4pi\s4pi.Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="s4pi.ImageResource">
-      <HintPath>F:\s4pi Library\s4pi.ImageResource.dll</HintPath>
+      <HintPath>..\s4pi\s4pi.ImageResource.dll</HintPath>
     </Reference>
     <Reference Include="s4pi.Interfaces">
-      <HintPath>F:\s4pi Library\s4pi.Interfaces.dll</HintPath>
+      <HintPath>..\s4pi\s4pi.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.JazzResource">
+      <HintPath>..\s4pi\s4pi.JazzResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.LotDescriptionResource">
+      <HintPath>..\s4pi\s4pi.LotDescriptionResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.MeshChunks">
+      <HintPath>..\s4pi\s4pi.MeshChunks.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.MiscellaneousResources">
+      <HintPath>..\s4pi\s4pi.MiscellaneousResources.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.ModularResource">
+      <HintPath>..\s4pi\s4pi.ModularResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.NameMapResource">
+      <HintPath>..\s4pi\s4pi.NameMapResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.NGMPHashMapResource">
+      <HintPath>..\s4pi\s4pi.NGMPHashMapResource.dll</HintPath>
     </Reference>
     <Reference Include="s4pi.Package">
-      <HintPath>F:\s4pi Library\s4pi.Package.dll</HintPath>
+      <HintPath>..\s4pi\s4pi.Package.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.RCOLChunks">
+      <HintPath>..\s4pi\s4pi.RCOLChunks.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.RegionDescriptionResource">
+      <HintPath>..\s4pi\s4pi.RegionDescriptionResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.Resource.Commons">
+      <HintPath>..\s4pi\s4pi.Resource.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.RigResource">
+      <HintPath>..\s4pi\s4pi.RigResource.dll</HintPath>
     </Reference>
     <Reference Include="s4pi.Settings">
-      <HintPath>F:\s4pi Library\s4pi.Settings.dll</HintPath>
+      <HintPath>..\s4pi\s4pi.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.StblResource">
+      <HintPath>..\s4pi\s4pi.StblResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.TerrainBlendMapResource">
+      <HintPath>..\s4pi\s4pi.TerrainBlendMapResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.TerrainMeshResource">
+      <HintPath>..\s4pi\s4pi.TerrainMeshResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.TextResource">
+      <HintPath>..\s4pi\s4pi.TextResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.ThumbnailCacheResource">
+      <HintPath>..\s4pi\s4pi.ThumbnailCacheResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.TxtcResource">
+      <HintPath>..\s4pi\s4pi.TxtcResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.WorldDescriptionResource">
+      <HintPath>..\s4pi\s4pi.WorldDescriptionResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.WorldObjectDataResource">
+      <HintPath>..\s4pi\s4pi.WorldObjectDataResource.dll</HintPath>
+    </Reference>
+    <Reference Include="s4pi.WrapperDealer">
+      <HintPath>..\s4pi\s4pi.WrapperDealer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -332,6 +450,7 @@
     <None Include="Resources\cuHead_lod2.simgeom" />
     <None Include="Resources\cuHead_lod3.simgeom" />
     <None Include="Resources\cuTeeth_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\puBodyComplete_lod0.simgeom" />
     <None Include="Resources\puHeadShell_lod0.simgeom" />
     <None Include="Resources\puHead_lod0.simgeom" />
@@ -339,10 +458,15 @@
     <None Include="Resources\puHead_lod2.simgeom" />
     <None Include="Resources\puHead_lod3.simgeom" />
     <None Include="Resources\puTeeth_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\S4_cmar_cuHeadShell_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\S4_cmar_puHeadShell_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\S4_cmar_yfHeadShell_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\S4_cmar_ymHeadShell_lod0.simgeom" />
+    <!-- remove ? -->
     <None Include="Resources\yfBodyComplete_lod0.simgeom" />
     <None Include="Resources\yfBodyRobe_lod0.simgeom" />
     <None Include="Resources\yfHeadShell_lod0.simgeom" />
@@ -396,6 +520,7 @@
     <None Include="Resources\ym_to_female_normals.deformermap" />
     <None Include="Resources\ym_to_female_shape.deformermap" />
     <None Include="Resources\yuTeeth_lod0.simgeom" />
+    <!-- remove ? -->
     <Content Include="S4_AdultCat_RIG.grannyrig">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
